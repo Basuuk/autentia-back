@@ -30,10 +30,6 @@ public class CourseController {
 				.entity(service.getAll(offset, limit))
 				.build();
 	}
-//	@GET
-//	public List<Course> getAll(@QueryParam("offset") Integer offset, @QueryParam("limit") Integer limit) {
-//		return service.getAll(offset, limit);
-//	}
 
 	@POST
 	public Course create(Course course) {

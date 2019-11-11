@@ -32,8 +32,10 @@ public class CourseController {
 	}
 
 	@POST
-	public Course create(Course course) {
-		return service.create(course);
+	public Response create(Course course) {
+		return Response.status(201)
+				.entity(service.create(course))
+				.build();
 	}
 
 }
